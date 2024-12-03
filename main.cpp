@@ -2,7 +2,6 @@
 #include <vector>
 #include <algorithm>
 #include <type_traits>
-
 template <typename T>
 T maximum(const std::vector<T>& vec) {
     std::vector<T> newVec = vec;
