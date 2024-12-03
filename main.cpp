@@ -5,10 +5,10 @@
 #include <limits>
 
 template <typename T>
-T maximum(const std::vector<T>& vec) {
+T minimum(const std::vector<T>& vec) {
     std::vector<T> newVec = vec;
     std::sort(newVec.begin(), newVec.end());
-    return newVec.at(newVec.size() - 1);
+    return newVec.at(0);
 }
 int main() {  
     int n;
@@ -25,6 +25,6 @@ int main() {
         }
         ints.push_back(m);
     }
-    std::cout << maximum<int>(ints) << std::endl;
+    std::cout << minimum<int>(ints) << std::endl;
     return 0;
 }
